@@ -42,11 +42,15 @@ in Ethereum smart contracts by analyzing their bytecode directly. Specifically, 
 combination of deep learning and natural language processing (NLP) techniques to analyze the opcodes
 present in the bytecode and identify patterns that are indicative of known vulnerabilities.
 
-To accomplish this, I will first collect and label a large dataset of Ethereum smart contract bytecode,
-including both vulnerable and non-vulnerable contracts. I will use this dataset to train a deep learning
-model that can accurately classify smart contracts based on their bytecode. Next, I will apply NLP
-techniques to analyze the opcodes present in the bytecode and identify patterns that are
-indicative of known vulnerabilities.
+To develop an approach for detecting vulnerabilities in Ethereum smart contracts, I will begin by 
+collecting a large dataset of bytecode for both vulnerable and non-vulnerable contracts. I will then 
+apply NLP techniques to analyze the opcodes present in the bytecode and select relevant features that 
+are indicative of known vulnerabilities.
+
+Once the feature selection is complete, I will use the resulting feature vectors to train a deep learning 
+model that can accurately classify smart contracts as either vulnerable or non-vulnerable based on their 
+bytecode. The NLP techniques will inform the feature selection process and help the model learn to recognize 
+patterns that are indicative of vulnerabilities in the smart contract code.
 
 To evaluate the effectiveness of my proposed approach, I will compare its performance to that of
 existing tools, such as Mythril. I will also test my approach on a real-world smart contract
@@ -61,10 +65,10 @@ This will be a solo project.
 
 | Milestone            | Start Date | End Date |
 | -------------------- | ---------- | -------- |
-| Data Collection      | x/x/x      | x/xs     |
-| Feature Selection    | xxx        | xxx      |
-| Model Selection      |            |          |
-| Training and Testing | xx         | xx       |
+| Data Collection      | 03/08/23   | 03/15/23 |
+| Feature Selection    | 03/15/23   | 03/22/23 |
+| Model Selection      | 03/29/23   | 04/05/23 |
+| Training and Testing | 04/05/23   | 04/08/23 |
 
 **Anticipated challenges**
 
@@ -78,16 +82,9 @@ as well as use data augmentation techniques to increase the size of the dataset.
 
 #### Bibliography
 
-**Datasets**
-
-malicious contracts dataset: https://github.com/forta-network/labelled-datasets/tree/main/labels/1
-
-slither audited smart contracts (very good): https://huggingface.co/datasets/mwritescode/slither-audited-smart-contracts
-
-**Relevant Papers**
 
 Attention-based machine learning model for smart contract vulnerability detection: https://iopscience.iop.org/article/10.1088/1742-6596/1820/1/012004/pdf
 
-vulnerability analysis with machine learning (opcodes): https://link.springer.com/article/10.1007/s11276-020-02379-z O
+vulnerability analysis with machine learning: https://link.springer.com/article/10.1007/s11276-020-02379-z O
 
 ContractWard: Automated Vulnerability Detection Models for Ethereum Smart Contracts: https://ieeexplore.ieee.org/abstract/document/8967006
